@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog da Hella</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: LuckiestGuy;
+            src: url(LuckiestGuy-Regular.ttf);
+        }
+        body {
+            background-image: url(img/footprints-309158_640.png);
+        }
+
+        header {
+            background-color: rgb(165,42,42);
+            color: white;
+            text-align: center;
+            height: 40px;
+            padding-top: 4%;
+        }
+
+        header a {
+            font-size: x-large;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: rgb(250,128,114);
+            color: rgb(117, 33, 33);
+        }
+
+        nav a{
+            text-decoration: none;
+            color: rgb(117, 33, 33);
+
+        }
+
+        a {
+            color: rgb(222, 136, 136);
+        }
+
+        h1 {
+            margin: 30px;
+            text-align: center;
+        }
+        
+        .fonte-externa {
+            font-family: LuckiestGuy;
+        }
+
+        footer {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background-color: rgb(165,42,42);
+            padding: 10px;
+            text-align: center;
+        }
+        footer p {
+            color: white;
+        }
+
+        .element-center {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .cadlog {
+            background-color: rgb(249, 228, 226);
+            border: solid 2px black;
+            border-radius: 5px;
+            text-align: justify;
+            width: 250px;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            display: block;
+        }
+        
+    </style> 
+</head>
+<body>
+    <header class="fonte-externa"><a href="index.html">Blog da Hella</a></header>
+    <nav>
+        <ul>
+            <li style="display: inline; float: inline-start;"><a href="login.html">Login</a></li>
+            <li style="display: inline; margin-left: 3%;"><a href="dona.html">Sobre a Dona</a></li>
+         </ul>
+    </nav>
+    <section>
+        <div class="cadlog">
+            <form method="POST">
+                <p style="text-align: center; color: rgb(205, 103, 92); font-size: larger; padding-bottom: 10px;" class="fonte-externa">Faça o Login</p>
+                <div>
+                <label for="username">Usuário</label>
+                <input type="text" name="usuario" id="usuario">
+                </div>
+                <div>
+                <label for="password">Senha</label>
+                <input type="password" name="senha" id="senha">
+                </div>
+                
+                <button type="submit">Login</button>
+                <p>Ainda não tem cadastro? <a href="cadastro.html">Cadastre-se</a>.</p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Desenvolvido por <a href="dona.html">Mariah Luisa<a></p>
+    </footer>
+</body>
+</html>
